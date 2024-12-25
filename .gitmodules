@@ -1,0 +1,3 @@
+[submodule "external/Arcade-Gyruss_MiSTer"]
+	path = external/Arcade-Gyruss_MiSTer
+	url = https://github.com/obsidian-dot-dev/Arcade-Gyruss_MiSTer

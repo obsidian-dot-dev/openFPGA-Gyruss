@@ -1,0 +1,168 @@
+{
+  "interact": {
+      "magic": "APF_VER_1",
+      "variables": [
+          {
+              "name": "Lives",
+              "id": 1,
+              "type": "list",
+              "enabled": true,
+              "persist": true,
+              "address": "0x80000000",
+              "writeonly": true,
+              "defaultval": 0,
+              "options": [
+                {
+                  "value": 0,
+                  "name": "3"
+                },
+                {
+                  "value": 1,
+                  "name": "4"
+                },
+                {
+                  "value": 2,
+                  "name": "5"
+                },
+                {
+                  "value": 3,
+                  "name": "255"
+                }                  
+              ]
+          },
+          {
+              "name": "Bonus",
+              "id": 2,
+              "type": "list",
+              "enabled": true,
+              "persist": true,
+              "address": "0x90000000",
+              "writeonly": true,
+              "defaultval": 0,
+              "options": [
+                {
+                  "value": 0,
+                  "name": "30k/90k/60+"
+                },
+                {
+                  "value": 1,
+                  "name": "40k/110k/70k+"
+                }
+              ]
+          },
+          {
+            "name": "Difficulty",
+            "id": 3,
+            "type": "list",
+            "enabled": true,
+            "persist": true,
+            "address": "0x10000000",
+            "writeonly": true,
+            "defaultval": 3,
+            "options": [
+              {
+                "value": 0,
+                "name": "1 (Easiest)"
+              },
+              {
+                "value": 1,
+                "name": "2"
+              },              
+              {
+                "value": 1,
+                "name": "2"
+              },              
+              {
+                "value": 2,
+                "name": "3 (Default)"
+              },              
+              {
+                "value": 3,
+                "name": "4"
+              },              
+              {
+                "value": 4,
+                "name": "5"
+              },              
+              {
+                "value": 5,
+                "name": "6"
+              },
+              {
+                "value": 6,
+                "name": "7"
+              },              
+              {
+                "value": 7,
+                "name": "8 (Hardest)"
+              }
+            ]
+        },
+        {
+          "name": "Cabinet Type",
+            "id": 4,
+            "type": "list",
+            "enabled": true,
+            "persist": true,
+            "address": "0x40000000",
+            "writeonly": true,
+            "defaultval": 0,
+            "options": [
+              {
+                "value": 0,
+                "name": "Upright"
+              },
+              {
+                "value": 1,
+                "name": "Cocktail"
+              }
+            ]
+        },
+        {
+          "name": "Demo Sounds",
+          "id": 5,
+          "type": "check",
+          "enabled": true,
+          "persist": false,
+          "writeonly": true,
+          "address": "0x50000000",
+          "defaultval": 0,
+          "value": 1,
+          "mask": "0xFFFFFFFE"
+        },
+        {
+          "name": "Demo Music",
+          "id": 6,
+          "type": "check",
+          "enabled": true,
+          "persist": false,
+          "writeonly": true,
+          "address": "0x60000000",
+          "defaultval": 0,
+          "value": 1,
+          "mask": "0xFFFFFFFE"
+        },
+        {
+          "name": "Service Mode",
+          "id": 7,
+          "type": "check",
+          "enabled": true,
+          "persist": false,
+          "writeonly": true,
+          "address": "0x20000000",
+          "defaultval": 0,
+          "value": 1,
+          "mask": "0xFFFFFFFE"
+        },
+        {
+          "name": "Reset Core",
+          "id": 8,
+          "type": "action",
+          "enabled": true,
+          "address": "0x30000000",
+          "value": 1
+        }
+      ],
+      "messages": []
+  }
+}
