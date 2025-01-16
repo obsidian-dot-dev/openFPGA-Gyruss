@@ -30,6 +30,8 @@ DIP Switches:
 - Cabinet Type (Upright or Cocktail)
 - Enable or Disable Demo Sounds + Demo Music
 
+DIP switch changes take effect after resetting the core.
+
 Game reset and service mode can also be controlled from the interact menu from the Analogue Pocket OSD.
 
 Note: Gameplay is paused while in the OSD.
@@ -37,7 +39,6 @@ Note: Gameplay is paused while in the OSD.
 ## Known Limitations
 
 * High Score saving unimplemented.
-* Pause is unimplemented.
 
 ## License
 
@@ -48,7 +49,7 @@ of individual modules.
 ## Attribution
 
 All credits for the Gyruss-compatible FPGA core are due the original authors
-and contributors, for which this port would not have been possible. Credits
+and contributors, without which this port would not have been possible. Credits
 for the original work (taken from the original 
 [core documentation](https://github.com/MiSTer-devel/Arcade-Gyruss_MiSTer?tab=readme-ov-file#credits))
 are as follows:

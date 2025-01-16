@@ -510,12 +510,14 @@ always @(posedge clk_sys) begin
 		manual_reset <= 1'b1;
 	end
 	else begin
-		if (reset_count == 25'b0001111111111111111111111) begin
-			reset_count <= 25'b0;
-			manual_reset <= 1'b0;
-		end
-		else begin
-			reset_count <= reset_count + 25'd1;
+		if (~pause_cpu) begin
+			if (reset_count == 25'b0001111111111111111111111) begin
+				reset_count <= 25'b0;
+				manual_reset <= 1'b0;
+			end
+			else begin
+				reset_count <= reset_count + 25'd1;
+			end
 		end
 	end
 end
@@ -649,7 +651,7 @@ Gyruss gyruss_dut
 	.p1_fire(~m_fire),
 	.p2_fire(~m_fire_2),
 	.btn_service(~cs_service),
-	.dip_sw({8'hFF, cs_dips, 8'hFF}), 
+	.dip_sw(cs_dips), 
 	.video_hsync(hs_core_n),
 	.video_vsync(vs_core_n),
 	
@@ -670,7 +672,7 @@ Gyruss gyruss_dut
 	.ioctl_data(ioctl_dout),
 	.ioctl_wr(ioctl_wr),
 	
-	.pause(0),
+	.pause(pause_cpu),
 	
 	//This input serves to select different fractional dividers to acheive 3.579545MHz for the sound Z80, 1.789772MHz for the
 	//AY-3-8910s and 8MHz for the i8039 depending on whether Gyruss runs with original or underclocked timings to normalize
