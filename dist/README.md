@@ -36,13 +36,13 @@ Game reset and service mode can also be controlled from the interact menu from t
 
 Note: Gameplay is paused while in the OSD.
 
-## History
+## Version History
 
-v0.9.1
-- Fixed release date in core.json.
+* v0.9.1
+- Fixed Release Date
 
-v0.9.0
-- Initial release.
+* v0.9.0
+- Initial release
 
 ## Known Limitations
 
