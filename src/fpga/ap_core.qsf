@@ -814,5 +814,5 @@ set_global_assignment -name VHDL_FILE "../../external/Arcade-Gyruss_MiSTer/rtl/s
 set_global_assignment -name VHDL_FILE "../../external/Arcade-Gyruss_MiSTer/rtl/sound/i8039/bus_mux.vhd"
 set_global_assignment -name VHDL_FILE "../../external/Arcade-Gyruss_MiSTer/rtl/sound/i8039/alu_pack-p.vhd"
 set_global_assignment -name VHDL_FILE "../../external/Arcade-Gyruss_MiSTer/rtl/sound/i8039/alu.vhd"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

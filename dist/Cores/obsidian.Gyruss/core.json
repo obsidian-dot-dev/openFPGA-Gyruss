@@ -8,7 +8,7 @@
             "author": "obsidian",
             "url": "https://github.com/obsidian-dot-dev/openFPGA-Gyruss",
             "version": "0.9.0",
-            "date_release": "2024-12-31"
+            "date_release": "2024-02-28"
         },
         "framework": {
             "target_product": "Analogue Pocket",
