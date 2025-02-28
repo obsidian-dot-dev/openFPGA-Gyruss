@@ -11,7 +11,7 @@ Controls are mapped as follows on the Analogue Pocket:
 | Function | Keys |
 |--|--|
 | Ship Movement |  D-Pad |
-| Fire: face buttons |
+| Fire | face buttons |
 | Insert Coin: | Select (-) |
 | Start | Start (+) |
 
@@ -35,6 +35,14 @@ DIP switch changes take effect after resetting the core.
 Game reset and service mode can also be controlled from the interact menu from the Analogue Pocket OSD.
 
 Note: Gameplay is paused while in the OSD.
+
+## History
+
+v0.9.1
+- Fixed release date in core.json.
+
+v0.9.0
+- Initial release.
 
 ## Known Limitations
 
